@@ -1,9 +1,9 @@
 # Use AlpineLinux as base image
-FROM alpine:3.5
+FROM alpine:3.7
 
 # Install Git
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git openssh
+    apk add --no-cache bash git openssh curl
 
 # Install Supervisor
 RUN apk add --no-cache \
